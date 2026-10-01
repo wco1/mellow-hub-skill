@@ -1,0 +1,6 @@
+{
+  "name": "mellow-hub",
+  "description": "Publish and schedule posts to Instagram, TikTok, YouTube, LinkedIn, X, Threads, Bluesky, Pinterest and Facebook through Mellow Hub's MCP server, with each network's rules checked first.",
+  "version": "1.0.0",
+  "author": { "name": "Spody App, LLC" }
+}
