@@ -46,10 +46,19 @@ folder is used as-is — `SKILL.md` with its YAML frontmatter (`name`,
   `mellow://guide/start`).
 - Plans and limits: https://www.mellow.world/hub/pricing
 
+## Cursor plugin
+
+The repository is also a Cursor plugin: `.cursor-plugin/plugin.json` names it,
+`mcp.json` adds the remote server (`https://www.mellow.world/mcp`, OAuth on
+first use) and `skills/` carries the skill. Install it from Cursor's plugin
+list, or add the server by hand under Settings → MCP with the same URL.
+
 ## Layout
 
 ```
 skills/mellow-hub/SKILL.md   the skill (frontmatter version = git tag)
+.cursor-plugin/plugin.json   the Cursor plugin manifest
+mcp.json                     the remote MCP server, for Cursor
 LICENSE                      MIT
 ```
 
