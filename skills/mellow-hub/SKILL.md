@@ -244,10 +244,12 @@ ends before the post is due), `network_limit_waiting` and
 and `media_limit_depends` (the file against the network's published limits),
 and `adapted_*` (what Hub fitted).
 
-Hub sends again by itself what a busy network, an unprocessed file or a
-network's limit refused: the target goes back to `scheduled` with `waiting`.
-Do not send it yourself. A post whose account's sign-in ran out is kept for
-three days and goes out when the person signs in again.
+Hub sends again by itself what a busy network, an unprocessed file, a
+network's limit or an outage of Hub's own publishing provider refused: the
+target goes back to `scheduled` with `waiting`. Do not send it yourself.
+A post whose account's sign-in ran out does not go out by itself after a
+sign-in: once the person signs in again, they choose on Hub's home screen
+(send now, pick a time, or leave it), or you call `retry_post`.
 
 ## 7. Trends: what to make
 
